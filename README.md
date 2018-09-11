@@ -1,8 +1,8 @@
 John Pye Auction Scraper
 ========================
 
-So this one's a bit niche. We buy stuff from (John Pye
-Auctions)[https://www.johnpyeauctions.co.uk] most weeks, and it can be
+So this one's a bit niche. We buy stuff from [John Pye
+Auctions](https://www.johnpyeauctions.co.uk) most weeks, and it can be
 interesting to see what items are available near the end of an auction for low
 prices - especially things that have had only one or less bids. Most of this
 stuff ends up being laughable junk, but sometimes you find a wee gem.
