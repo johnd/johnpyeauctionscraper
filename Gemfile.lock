@@ -1,15 +1,36 @@
 GEM
   remote: https://www.rubygems.org/
   specs:
+    kgio (2.11.2)
     mini_portile2 (2.3.0)
+    mustermann (1.0.3)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
+    rack (2.0.7)
+    rack-protection (2.0.5)
+      rack
+    raindrops (0.19.0)
+    sequel (5.19.0)
+    sinatra (2.0.5)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.5)
+      tilt (~> 2.0)
+    sqlite3 (1.4.0)
+    tilt (2.0.9)
+    unicorn (5.5.0)
+      kgio (~> 2.6)
+      raindrops (~> 0.7)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   nokogiri
+  sequel
+  sinatra
+  sqlite3
+  unicorn
 
 BUNDLED WITH
-   1.16.1
+   1.17.2
