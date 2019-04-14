@@ -46,24 +46,25 @@ of the project that's acceptable.
 DB Schema
 ---------
 
-Auction
--------
+### Auction
 
-ID: Autoinc internal ID
-URL: URL to 'auction_details' page
-CLOSING: Pick from first item, or scrape from text on details page?
-PYE_ID: The John Pye reference, ie 'SR33' or similar, scraped from details page
-PAGE_ONE_URL: First page of items, scraped from details page (used for indexing,
-saves scraping it multiple times)
+Field       | Description
+------------|------------
+ID          | Autoinc internal ID
+URL         | URL to 'auction_details' page
+CLOSING     | Pick from first item, or scrape from text on details page?
+PYE_ID      | The John Pye reference, ie 'SR33' or similar, scraped from details page
+PAGE_ONE_URL| First page of items, scraped from details page (used for indexing, saves scraping it multiple times)
 
-Item
-----
+### Item
 
-ID: Autoinc internal ID
-AUCTION_ID: id of the auction item 'belongs to'
-URL: URL to 'lot_details' page
-CLOSING: Last known closing datetime
-PRICE: Last known price
-IMAGE_URL: URL for the image/first image
-DESCRIPTION: Scraped description text
-LAST_SCRAPED_AT: Last time we scraped the data
+Field          | Description
+---------------|------------
+ID             | Autoinc internal ID
+AUCTION_ID     | id of the auction item 'belongs to'
+URL            | URL to 'lot_details' page
+CLOSING        | Last known closing datetime
+PRICE          | Last known price
+IMAGE_URL      | URL for the image/first image
+DESCRIPTION    | Scraped description text
+LAST_SCRAPED_AT| Last time we scraped the data
