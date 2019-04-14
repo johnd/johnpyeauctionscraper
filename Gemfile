@@ -1,6 +1,6 @@
 source 'https://www.rubygems.org'
 
-gem 'nokogiri'
+gem "nokogiri", ">= 1.8.5"
 gem "sqlite3"
 gem "sequel"
 gem 'sinatra'
