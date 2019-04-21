@@ -72,3 +72,32 @@ DESCRIPTION    | Scraped description text
 ITEM_NUMBER    | Scraped item number
 LAST_SCRAPED_AT| Last time we scraped the data
 NOTES          | Space for manually-set per-item notes
+
+
+Scraping notes
+--------------
+
+### Auction
+
+Field        | CSS Selector
+-------------|-------------
+Closing      | `#table6 tr:nth-child(3) td:nth-child(2) font`
+Pye_id       | `font td font font`
+Page_one_url | `td div strong`
+
+### Item
+
+From item list page, use `td:nth-child(4) a` to get list of items, build URLs
+from the `href` attribute like:
+
+`"http://www.johnpyeauctions.co.uk/#{item.attributes["href"].value}"`
+
+`item.parent.parent` will produce the full `<tr>` for each item.
+
+Field       | How to extract
+------------|---------------
+image_url   | `item.parent.parent.at_css("a[rel='popover']").attributes["data-img"].value`
+description | `item.parent.parent.css("a h5")[1].text`
+item_number | `item.parent.parent.at_css("a h5").text`
+price       | `item.children.first.children.first.text.gsub("£","").to_i`
+closing     | `item.parent.parent.css("a h5")[3].text` + further conversion!
