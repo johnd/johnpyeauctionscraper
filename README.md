@@ -55,6 +55,7 @@ URL         | URL to 'auction_details' page
 CLOSING     | Pick from first item, or scrape from text on details page?
 PYE_ID      | The John Pye reference, ie 'SR33' or similar, scraped from details page
 PAGE_ONE_URL| First page of items, scraped from details page (used for indexing, saves scraping it multiple times)
+NOTES       | Space for manually-set per-auction notes
 
 ### Item
 
@@ -67,4 +68,6 @@ CLOSING        | Last known closing datetime
 PRICE          | Last known price
 IMAGE_URL      | URL for the image/first image
 DESCRIPTION    | Scraped description text
+ITEM_NUMBER    | Scraped item number
 LAST_SCRAPED_AT| Last time we scraped the data
+NOTES          | Space for manually-set per-item notes
