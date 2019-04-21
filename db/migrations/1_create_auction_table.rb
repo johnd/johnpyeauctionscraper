@@ -6,6 +6,7 @@ Sequel.migration do
       String :closing, null: false
       String :pye_id, null: false
       String :page_one_url, null: false
+      TrueClass :expired
       String :notes, text: true
     end
   end

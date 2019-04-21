@@ -55,6 +55,7 @@ URL         | URL to 'auction_details' page
 CLOSING     | Pick from first item, or scrape from text on details page?
 PYE_ID      | The John Pye reference, ie 'SR33' or similar, scraped from details page
 PAGE_ONE_URL| First page of items, scraped from details page (used for indexing, saves scraping it multiple times)
+EXPIRED     | Set true once we don't want to track an auction
 NOTES       | Space for manually-set per-auction notes
 
 ### Item

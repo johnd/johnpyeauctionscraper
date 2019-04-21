@@ -2,7 +2,7 @@ Sequel.migration do
   change do
     create_table(:items) do
       primary_key :id
-      Integer :auction_id, null: false
+      foreign_key :auction_id, :auctions
       String :url, null: false
       String :closing, null: false
       String :price, null: false
